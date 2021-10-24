@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #FFF1F1;
+    padding: 25px;
+
+}
+/* add-table css */
+.customer-table {
+    background: #fff;
+   max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    overflow-x: auto;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-head{
+	background: #E22424;
+	color:#fff;
+    display: flex;
+}
+tr.table-head th {
+    padding: 21px 132px 3px 48px;
+    margin:0;
+    width: 26px !important;
+}
+tbody tr
+{
+    background-color: #f9f9f9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 25px !important;
+    display: block;
+}
+tbody td:last-child{
+	border-right:none;
+}
+tbody tr input {
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 0;
+    padding: 8px;
+    border-right: 1px solid #000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+tbody tr.meals-table-row{
+    margin-bottom: 0px !important;
+}
+tbody tr.meals-table-row input {
+border-right: none;
+margin-top: 0px;
+margin-bottom: 0px;
+padding: 0px;
+}
+.adjust-time-btn {
+    background-color: #E22424;
+    padding: 5px 50px 5px 50px;
+    font-size: 11px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+tbody tr input:last-child{
+	border-right:0 px solid #000;
+}
+.last{
+    border-right: none;
+}
+button.add-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button.icon{
+	height:20px;
+	width: 20px;
+}
+i.fa.fa-plus.icon {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+/* meals-table css */
+.meals-table :is(th, td) {
+    border: 1px solid #0002;
+    padding: 8px 10px;
+    width: 136px;
+}
+tbody tr.meals-table-row{
+    margin-bottom: 0px !important;
+}
+tbody tr.meals-table-row input {
+border-right: none;
+margin-top: 0px;
+margin-bottom: 0px;
+padding: 0px;
+}
+.adjust-time-btn {
+    background-color: #E22424;
+    padding: 5px 50px 5px 50px;
+    font-size: 11px;
+    color: #fff;
+    border: none;
+}
+/* popup css */
+.popup{
+    position: absolute;
+    top: 150%;
+    right: 12%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms;
+    opacity: 200ms ease-in-out 0ms;
+    transform: 20ms ease-in-out 0ms;
+}
+.popup.active{
+    top: 38%;
+    opacity: 1;
+    transition:top 28ms ease-in-out 0ms;
+    opacity: 200ms ease-in-out 0ms;
+    transform: 20ms ease-in-out 0ms;
+}
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.popup .form {
+    color: #222;
+}
+.popup .form h2{
+    text-align: center;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+.popup .form .form-element{
+    margin: 15px 0px;
+}
+.popup .form .form-element label{
+    font-size: 14px;
+}
+.popup .form .form-element input[type="time"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.popup .form .form-element select{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.popup .form .form-element .save-button{
+    background: #E22424;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js table</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="customer-table">
+	<table class="table">
+    <thead>
+      <tr class="table-head">
+        <th >Book</th>
+        <th>Code</th>
+        <th>write Name</th>
+        <th>Other</th>
+      </tr>
+    </thead>
+    <tbody id="table_body">
+      <tr class="table-row" style="margin-bottom: 20px;">
+        <td>
+          <input type="text" class="form_control" placeholder="Minhaz">
+        </td>
+        <td>
+          <input type="text" class="form_control" placeholder=995>
+        </td>
+        <td>
+          <input type="text" class="form_control" placeholder="bin baz hjdkkllks">
+        </td>
+        <td>
+          <input type="text" class="form_control last" placeholder="N/A">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="action_container">
+            <button class="add-button" onclick="create_tr('table_body')">
+              <i class="fa fa-plus icon"></i>
+             <span> Add more</span>
+            </button>
+          </div>
+</div>
+
+<script src="index.js">javascript</script>	
+</body>
+</html>
